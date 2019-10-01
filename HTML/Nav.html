@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+                        <!-- Navigation bar -->
+        <div class="navbar" align="center">
+
+            <table>
+                <tr>
+                    <td><a href="Home.php"> Home </a>&emsp;&emsp;&emsp;&emsp;</td>
+                    <td id="LoginState"><a href="Login.php"> Login </a>&emsp;&emsp;&emsp;&emsp;  </td>
+                    <td id="RegisterState"><a href="Register.php"> Register </a>&emsp;&emsp;&emsp;&emsp;  </td>
+                    <td id="LogOutState"></td>
+                    <td><a href="Players.php"> Players </a>&emsp;&emsp;&emsp;&emsp;  </td>
+                                        <!-- Clock -->
+                    <td id="link2" width="150"> <span id="time"></span> </td>
+                </tr>
+            </table>
+
+            </div><br><br><br><br>
+        
+            <div>
+                
+                <!------------------------[JavaScript Code]---------------------------->
+                <script>
+                    
+                    setTimeout(function(){getTime()},100);
+        
+                    function getTime()
+                    {  
+                        var today=new Date();  
+                        var h=today.getHours();  
+                        var m=today.getMinutes();  
+                        var s=today.getSeconds();  
+                        
+                        //Put zeros if No.  (0 => 9)
+                        m=checkTime(m);  
+                        s=checkTime(s);  
+
+                        document.getElementById('time').innerHTML=h+":"+m+":"+s;  
+                        setTimeout(function(){getTime()},1000);  
+                    }  
+                
+                    function checkTime(i)
+                    {  
+                        if (i<10)
+                        {  
+                            i="0" + i;  
+                        }  
+                        return i;  
+                    }
+                </script>
+                
+            </div>
+    </body>
+</html>

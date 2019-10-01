@@ -1,0 +1,139 @@
+.navbar
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgba(139, 137, 8, 0.603);
+	top: 0;
+	width: 100%;
+	position: fixed;
+	right: 0;
+
+}
+
+#div1{
+	margin-top: 7%;
+	
+}
+
+tr.spaceUnder>td {
+  padding-bottom: 10px;
+}
+
+#link{
+	background-color:rgba(139, 137, 8, 0.603);
+	font-family:"Bookman";
+	width:100%;
+	}
+
+#link2{
+	font-family:"Impact";
+	font-size: 150%;
+	width:14%;
+	font-style: italic;
+	color: rgb(77, 78, 80);
+	}
+
+#color
+{
+	color:#FFEA00;
+	font-family:impact;
+	font-size:50px;
+	font-style: italic;
+}
+
+#color1
+{
+	color:rgba(255, 255, 255, 0.678);
+	stroke:black;
+}
+
+#tp
+{
+	color:rgb(0, 0, 0);
+	background-color: rgba(182, 179, 17, 0.52);
+	border: 1;
+	size: 10;
+	font-family: sans-serif;
+}
+
+a:link, a:visited {
+    
+  color: rgb(255, 255, 255);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	font-size:200%;
+}
+
+a:hover, a:active {
+
+	color:rgb(212, 199, 9);
+}
+
+
+
+.button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	width: 20%;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.myButton {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+}
+
